@@ -1,0 +1,54 @@
+@import "~/src/sass/Index.scss";
+.main_content {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background: rgb(157, 242, 95);
+   background: linear-gradient(
+      281deg,
+      rgba(157, 242, 95, 1) 0%,
+      rgba(118, 228, 131, 1) 26%,
+      rgba(89, 208, 179, 1) 100%
+   );
+   .content_qr {
+      width: 70%;
+      display: flex;
+      color: #121212;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      
+      padding: 15px;
+      h2 {
+         margin-top: 20px;
+         border-bottom: 2px solid rgb(223, 223, 223);
+         padding-bottom: 8px;
+         width: 100%;
+         text-align: center;
+      }
+      .ui.secondary.menu {
+         display: flex;
+         flex-wrap: wrap;
+      }
+   }
+   .content_sidebar {
+      width: 30%;
+   }
+}
+
+// Responsive
+@media screen and (max-width: $responsive) {
+   .main_content {
+      flex-direction: column;
+      .content_qr {
+         width: 100%;
+         .ui.secondary.menu {
+            row-gap: 10px;
+         }
+      }
+      .content_sidebar {
+         width: 100%;
+      }
+   }
+}
