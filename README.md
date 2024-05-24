@@ -2,7 +2,7 @@
 
 # QRemix
 
-Sitio web para generar QRs desde textos, links, telefonos, whatsapp, wifi, etc, realizado con React y Sass.
+Sitio web para generar codigos QR apartir de Links, Textos, Whatsapp y mucho más.
 
 # Dependencias
 
