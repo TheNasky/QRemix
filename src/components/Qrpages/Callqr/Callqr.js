@@ -34,7 +34,7 @@ export function Callqr() {
   return (
     <Form loading={isLoading} onSubmit={formik.handleSubmit}>
       <div className="form_container">
-        <h4>Genera QRs para guardar contantos o llamar</h4>
+        <h4>Genera QRs para guardar contactos o realizar llamadas</h4>
         <Form.Group widths="equal">
           <Form.Dropdown
             label="Código de País"
